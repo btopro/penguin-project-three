@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+  <base href="/">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 50px;
+      font-family: sans-serif;
+    }
+    .wrapper {
+      margin: 100px;
+    }
+    .menu {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .menu li {
+      display: inline-flex;
+      font-weight: bold;
+      padding: 40px;
+    }
+    .joyful {
+      font-size: 2em;
+    }
+  </style>
+  <title>Project 3: HAXTheWeb</title>
+</head>
+
+<body>
+  <ul class="menu">
+    <li><a href="#">Rename demo</a></li>
+    <li><a href="/hax.html">HAX, card demo</a></li>
+  </ul>
+  <div class="wrapper">
+    <rename-me need="joy">Some inner text that will render out</rename-me>
+    <word-count>
+      <rename-me need="nothing"><div>You feel much shame.</div></rename-me>
+    </word-count>
+  </div>
+  <script type="module">
+    import "./rename-me.js";
+    import "@lrnwebcomponents/word-count/word-count.js";
+  </script>
+</body>
+
+</html>

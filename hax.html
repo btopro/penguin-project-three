@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+  <base href="/">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .hax-wrapper {
+      margin: 100px;
+      padding: 50px;
+    }
+    .menu {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .menu li {
+      display: inline-flex;
+      font-weight: bold;
+      padding: 40px;
+    }
+  </style>
+  <title>project-3: HAX integration</title>
+  <script>
+    window.process = window.process || {
+      env: {
+        NODE_ENV: "production"
+      }
+    };
+  </script>
+  <script src="../../../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>    
+  <script src="../../../node_modules/@lrnwebcomponents/deduping-fix/deduping-fix.js"></script>
+  <script src="../../../node_modules/web-animations-js/web-animations-next-lite.min.js"></script>
+  <script type="module">
+    import '../rename-me.js';
+    import "@lrnwebcomponents/h-a-x/h-a-x.js";
+    import("@polymer/polymer/lib/utils/settings.js").then((esModule) => {
+      esModule.setPassiveTouchGestures(true);
+    });
+  </script>
+</head>
+
+<body>
+  <ul class="menu">
+    <li><a href="/index.html">Card demo</a></li>
+    <li><a href="#" disabled>HAX, card demo</a></li>
+  </ul>
+  <div class="hax-wrapper">
+    <h-a-x app-store='{"url": "assets/appstore.json"}' element-align="right">
+      <p data-hax-grid="" role="textbox">Stuff and thigns</p>
+      <p data-hax-grid="" role="textbox">Another block of text below that</p>
+
+      <grid-plate data-hax-grid="" layout="1-1-1" responsive-size="sm" role="textbox" breakpoint-sm="900" breakpoint-md="1200" breakpoint-lg="1500" breakpoint-xl="1800" disable-responsive="">
+        
+        <retro-card role="textbox" title="hax" url="https://haxtheweb.org/" subtitle="The future of content authoring" tags="bright, amazing, innovative, new, fun, a requirement to complete this course" slot="col-1" accent-color="indigo" dark=""></retro-card>
+      
+        
+        <retro-card title="hax" subtitle="The future of content authoring" tags="bright, amazing, innovative, new, fun, a requirement to complete this course" url="https://haxtheweb.org/" role="textbox" slot="col-2" accent-color="pink"></retro-card>
+      
+        
+        <retro-card title="hax" subtitle="The future of content authoring" tags="bright, amazing, innovative, new, fun, a requirement to complete this course" url="https://haxtheweb.org/" role="textbox" slot="col-3" accent-color="light-green"></retro-card>
+      
+      
+      </grid-plate>
+      
+      
+      <grid-plate data-hax-grid="" layout="1-1" responsive-size="sm" role="textbox" breakpoint-sm="900" breakpoint-md="1200" breakpoint-lg="1500" breakpoint-xl="1800" disable-responsive="">
+        
+        <self-check title="SHARK ATE ME" image="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/480px-White_shark.jpg" alt="Great White Shark" resource="#d0c6f753-9175-1997-9197-39dc535d83d3" prefix="oer:http://oerschema.org/ schema:http://schema.org/ dc:http://purl.org/dc/terms/ foaf:http://xmlns.com/foaf/0.1/ cc:http://creativecommons.org/ns# bib:http://bib.schema.org " role="textbox" element-visible="" slot="col-1" dark="" accent-color="deep-purple" schema-resource-id="#d0c6f753-9175-1997-9197-39dc535d83d3" t="{&quot;revealAnswer&quot;:&quot;Reveal Answer&quot;,&quot;close&quot;:&quot;Close&quot;,&quot;moreInformation&quot;:&quot;More information&quot;}">
+          
+          <span slot="question">How large can the average great white shark grow to be?</span>The Great White shark can grow to be 15 ft to more than 20 ft in length and weigh 2.5 tons or more.
+        
+        </self-check>
+      
+        
+        <multiple-choice randomize="" accent-color="grey" typeof="oer:Assessment" resource="#dfdbba81-340e-ffdd-3558-1b4341aec581" prefix="oer:http://oerschema.org/ schema:http://schema.org/ dc:http://purl.org/dc/terms/ foaf:http://xmlns.com/foaf/0.1/ cc:http://creativecommons.org/ns# bib:http://bib.schema.org " role="textbox" check-label="Check answer" reset-label="Reset" quiz-name="default" correct-text="Thanks for taking the class" incorrect-text="How.. did I even..." correct-icon="icons:thumb-up" incorrect-icon="icons:trending-down" slot="col-2" question="What is HAX" schema-resource-id="#dfdbba81-340e-ffdd-3558-1b4341aec581">
+          
+          <input type="checkbox" value="a text editor" correct="correct" role="textbox">
+      
+          
+          <input type="checkbox" value="The future" correct="correct">
+      
+          
+          <input type="checkbox" value="a required part of this assignment" correct="correct">
+      
+          
+          <input type="checkbox" value="Terrible">
+      
+        
+        </multiple-choice>
+      
+      
+      </grid-plate>
+      
+      
+      <rename-me value="This is editable" need="all need to succeed"></rename-me>
+      
+      
+      <p data-hax-grid="">Cool stuff. Let's write about spongebob!</p>
+      
+      
+      <grid-plate layout="1-1-1" responsive-size="sm" data-hax-grid="" breakpoint-sm="900" breakpoint-md="1200" breakpoint-lg="1500" breakpoint-xl="1800">
+            
+        
+        <meme-maker slot="col-1" alt="happy dance GIF by SpongeBob SquarePants" image-url="https://media0.giphy.com/media/nDSlfqf0gn5g4/giphy.gif" bottom-text="We Are" top-text="Ready">
+          
+          
+          <div>Ready</div>
+            
+          
+          <img src="https://media0.giphy.com/media/nDSlfqf0gn5g4/giphy.gif" alt="happy dance GIF by SpongeBob SquarePants" preload="lazy" aria-describedby="">
+          
+          
+          <div>We Are</div>
+        
+        </meme-maker>
+            
+        
+        <meme-maker slot="col-2" alt="happy dance GIF by SpongeBob SquarePants" image-url="https://media0.giphy.com/media/nDSlfqf0gn5g4/giphy.gif" bottom-text="We Are" top-text="Ready">
+          
+          
+          <div>Ready</div>
+            
+          
+          <img src="https://media0.giphy.com/media/nDSlfqf0gn5g4/giphy.gif" alt="happy dance GIF by SpongeBob SquarePants" preload="lazy" aria-describedby="">
+          
+          
+          <div>We Are</div>
+        
+        </meme-maker>
+            
+        
+        <meme-maker slot="col-3" alt="happy dance GIF by SpongeBob SquarePants" image-url="https://media0.giphy.com/media/nDSlfqf0gn5g4/giphy.gif" bottom-text="We Are" top-text="Ready">
+          
+          
+          <div>Ready</div>
+            
+          
+          <img src="https://media0.giphy.com/media/nDSlfqf0gn5g4/giphy.gif" alt="happy dance GIF by SpongeBob SquarePants" preload="lazy" aria-describedby="">
+          
+          
+          <div>We Are</div>
+        
+        </meme-maker>
+            
+      
+      </grid-plate>
+      
+      
+      <p data-hax-grid="">Cool stuff. Let's write about spongebob!</p>
+    </h-a-x>
+  </div>
+</body>
+
+</html>
