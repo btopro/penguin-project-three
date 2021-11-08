@@ -34,6 +34,7 @@ These are notes to be maintained PER date that you meet.
     - Flips when it is correct
     - Same element
 - Drawing
+The image is in our assets folder.
 ![Drawing of our design](assets/IMG_3687.jpg)
 #### What we'll do next
 
@@ -41,7 +42,7 @@ These are notes to be maintained PER date that you meet.
 ## Status check ins
 These are dedicated status check-ins as this is a multi-week project
 ### Check-in 1
--
+- See In Class meeting from 11/4
 -
 ### Check-in 2
 -
