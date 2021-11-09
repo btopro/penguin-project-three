@@ -34,14 +34,15 @@ These are notes to be maintained PER date that you meet.
     - Flips when it is correct
     - Same element
 - Drawing
-![Drawing of our design](assets/IMG_3687.jpg)
+The image is in our assets folder.
+![Drawing of our design](assets/drawing.png)
 #### What we'll do next
 
 
 ## Status check ins
 These are dedicated status check-ins as this is a multi-week project
 ### Check-in 1
--
+- See In Class meeting from 11/4
 -
 ### Check-in 2
 -
