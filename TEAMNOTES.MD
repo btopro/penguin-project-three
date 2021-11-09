@@ -35,7 +35,7 @@ These are notes to be maintained PER date that you meet.
     - Same element
 - Drawing
 The image is in our assets folder.
-![Drawing of our design](assets/IMG_3687.jpg)
+![Drawing of our design](assets/drawing.png)
 #### What we'll do next
 
 
