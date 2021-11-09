@@ -58,10 +58,6 @@ export class FlashCard extends LitElement {
       :host {
         display: block;
       }
-      :host([need='joy']) {
-        color: yellow;
-        background-color: black;
-      }
     `;
   }
 
