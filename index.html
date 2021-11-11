@@ -37,6 +37,7 @@
   <ul class="menu">
     <li><a href="#">Flashcard Demo</a></li>
     <li><a href="/hax.html">HAX, card demo</a></li>
+    <button onclick="toggleLanguage();">Toggle language</button>
   </ul>
   <div class="wrapper">
     <bto-pro-box>
@@ -65,6 +66,18 @@
     import "@lrnwebcomponents/word-count/word-count.js";
     import "./src/AnswerBox.js";
     import "./src/BtoProBox.js";
+  </script>
+  <script>
+    // just for demonstration
+    function toggleLanguage() {
+      const i18store = window.I18NManagerStore.requestAvailability();
+      if (i18store.lang === "es") {
+        i18store.lang = "en";
+      }
+      else {
+        i18store.lang = "es";
+      }
+    }
   </script>
 </body>
 

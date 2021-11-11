@@ -9,16 +9,21 @@ export class BtoProBox extends I18NMixin(LitElement) {
   constructor() {
     super();
     this.back = false;
+    this.correct = false;
+    this.showResult = false;
+    this.statusIcon = '';
+    this.sideToShow = 'front';
     this.userAnswer = '';
     this.t = {
       yourAnswer: 'Your answer',
       checkAnswer: 'Check answer',
       restartActivity: 'Restart activity',
     };
-    this.correct = false;
-    this.showResult = false;
-    this.statusIcon = '';
-    this.sideToShow = 'front';
+    this.registerLocalization({
+      context: this,
+      localesPath: new URL('../locales/', import.meta.url).href,
+      locales: ['es'],
+    });
   }
 
   static get properties() {
