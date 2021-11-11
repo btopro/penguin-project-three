@@ -1,6 +1,36 @@
 import { LitElement, html, css } from 'lit';
 import { I18NMixin } from '@lrnwebcomponents/i18n-manager/lib/I18NMixin.js';
 
+/**
+ * Things (intentionally) left undone but that would need taken into account
+ * from this example:
+ * - Hitting Enter while typing the answer in the input SHOULD trigger a click
+ * / submit style event on the "Check answer" button. This way the user has a
+ * more natural experience when using this.
+ * - obviously more style work
+ * - the slot while taking in the answer, needs some way of supporting visually
+ * the image or whatever the material being asked about is while NOT assuming
+ * that the information can be obtained in a purely by asking for textContent
+ * as it does currently. This might be a specific element to find within a slot
+ * of these names (hypothetically; again, something LIKE this).
+ * - A string is left untranslated
+ * - Obviously the correct / incorrect status should be visualized in some
+ * manner that places it either directly over the item in question (as per comp)
+ * or is an outline. Something more visually appealing. This could also provide
+ * some thought on how the slot API is constructed here because you almost want
+ * the asnwer to be different from the content so that it can be overlayed over
+ * top of it (again, if going for matching the comp on this one). There are ways
+ * of accomplishing that while maintaining the same approach shown but figured
+ * I'd at least mention it.
+ * - Also if we're going for language based words an option that uses browser
+ * synthesis (like your penguin element) to allow for a click to hear a pronounciation
+ * would be killer. The browser voice overs are able to tap into language and speak
+ * things other than english (as well as british / accents) so worth a look.
+ *
+ * The localCompare function you wrote is very impressive and I never realized
+ * that was a thing. Great solution taking into account i18n ahead of time here.
+ */
+
 export class BtoProBox extends I18NMixin(LitElement) {
   static get tag() {
     return 'bto-pro-box';
