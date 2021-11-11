@@ -43,10 +43,19 @@
     <word-count>
       <flash-card need="nothing"><div>You feel much shame.</div></flash-card>
     </word-count>
+    <answer-box>
+      <p slot="front">What is strawberry in Spanish</p>
+      <p slot="back">fresa</p>
+    </answer-box>
+    <answer-box back-first>
+      <p slot="front">What is blackberry in Spanish</p>
+      <p slot="back">mora</p>
+    </answer-box>
   </div>
   <script type="module">
     import "./flash-card.js";
     import "@lrnwebcomponents/word-count/word-count.js";
+    import "./src/AnswerBox.js";
   </script>
 </body>
 
